@@ -1,4 +1,16 @@
 
+/*
+========================================================================================
+DML Scripts: Bulk Insert data into Bronze tables.
+========================================================================================
+
+Script Purpose: This Stored Procedure (SP) loads raw data from the source system into the Bronze table. It utilises a 
+Truncate-and-Load pattern to ensure data freshness and prevent duplicates. Encapsulation in an SP guarantees efficient script reuse.
+
+----------------------------------------------------------------------------
+*/
+
+
 CREATE OR ALTER procedure bronze.load_bronze AS
 
 BEGIN
@@ -90,3 +102,4 @@ BEGIN
 				PRINT '================================================================='
 	END CATCH
 END
+
