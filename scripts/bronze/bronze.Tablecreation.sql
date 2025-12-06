@@ -1,8 +1,19 @@
 
+/*
+
+=====================================================================
+DDL Scripts: Create Bronze Tables
+=====================================================================
+
+Script Purpose: This script creates a  table for the  bronze schema and drops the table if it already exists.
+
+--------------------------------------------------------------------------------------
+
+*/
 DROP TABLE IF EXISTS bronze.crm_cust_info
 GO
 CREATE TABLE bronze.crm_cust_info(
-cst_id INT ,
+cst_id INT,
 cst_key VARCHAR(50),
 cst_firstname VARCHAR(25),
 cst_lastname VARCHAR(25),
@@ -54,4 +65,5 @@ ID VARCHAR(25),
 CAT VARCHAR(40),
 SUBCAT VARCHAR(30),
 MAINTENANCE VARCHAR(40));
+
 
