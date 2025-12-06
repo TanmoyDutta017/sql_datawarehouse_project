@@ -1,3 +1,10 @@
+/*
+===============================================================================
+Stored Procedure: Load Silver Layer (Bronze -> Silver)
+===============================================================================
+
+*/
+
 
 CREATE OR ALTER PROCEDURE silver.load_silver AS
 
@@ -153,3 +160,4 @@ PRINT 'Error Nubmer : ' +  CAST(error_number() AS VARCHAR)
 
 END CATCH
 END
+
